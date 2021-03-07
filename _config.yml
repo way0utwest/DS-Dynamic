@@ -117,8 +117,8 @@ footer-link-col: "#404040"
 #  - "/assets/css/styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-site-js:
-  - "/assets/js/scripts.js"
+# site-js:
+#  - "/assets/js/scripts.js"
 
 # --- Web Analytics Section --- #
 
