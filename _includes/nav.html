@@ -1,19 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">
-            Data Saturdays
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars ml-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item"><a class="nav-link" href="https://github.com/sqlcollaborative/DataSaturdays">Github</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#events">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="about">Past Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#aboutus">About Us</a></li>
-            </ul>
-        </div>
-    </div>
-  </nav>
+<div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+      {%- for link in site.navbar-links -%}
+        {%- if link[1].first %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link[0] }}</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {%- for childlink in link[1] -%}
+                {%- for linkparts in childlink %}
+                  <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
+                {%- endfor -%}
+              {%- endfor %}
+            </div>
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
