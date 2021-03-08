@@ -42,6 +42,8 @@ p {
 
 
 .page-section {
+  position: relative;
+  top: 50px;
   padding: 6rem 0;
 }
 .page-section h2.section-heading {
