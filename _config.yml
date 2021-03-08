@@ -10,10 +10,9 @@ author: Data Saturdays
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - A Test: "google.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  A Test: "google.com"
+  Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://google.com"
 
 # --- Logo --- #
 
