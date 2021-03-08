@@ -45,9 +45,13 @@ p {
   padding: 8rem 0 calc(8rem + 4vw);
 }
 .page-section h2.section-heading {
-  font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: #4793e0;
+  letter-spacing: 0.0625em;
+  font-weight: bold;
 }
 .page-section h3.section-subheading {
   font-size: 1rem;
