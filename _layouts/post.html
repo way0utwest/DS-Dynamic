@@ -42,10 +42,16 @@ layout: default
       <div class="text-center">
           <h2 class="section-heading text-uppercase">Schedule</h2>
           <div class="alert alert-light" role="alert">
+            {{% if pagedata.scheduleur%}}
               <p>
                   <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
                   </iframe>
               </p>
+            {{% else %}}
+            <p>
+              The schedule has not been announced yet. If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.
+          </p>
+            {{% endif %}}
           </div>
 
       </div>
@@ -86,7 +92,11 @@ layout: default
           <h2 class="section-heading text-uppercase">Speakers</h2>
           <div class="alert alert-light" role="alert">
               <p>
-                  <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>                           
+                {% if pagedata.callforspeakers = false %}
+                  <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>   
+                {% else %}
+                  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.speakerlisturl}}">Submit your session</a>
+                {% endif %}                         
               </p>
           </div>
       </div>
