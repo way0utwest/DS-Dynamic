@@ -28,10 +28,26 @@ layout: default
             <div class="row justify-content-center">
                 <p>
                   {%- for room in pagedata.join.rooms -%}
-                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mr-4" target="_blank" href="{{room.url">{{room.name}}</a>
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mr-4" target="_blank" href="{{room.url}}">{{room.name}}</a>
                   {%- endfor %}
                </p>
             </div>
         </div>
     </div>
+</section>
+
+  <!-- Schedule -->
+<section class="page-section" id="schedule">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading text-uppercase">Schedule</h2>
+          <div class="alert alert-light" role="alert">
+              <p>
+                  <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+                  </iframe>
+              </p>
+          </div>
+
+      </div>
+  </div>
 </section>
