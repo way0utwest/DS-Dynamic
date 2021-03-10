@@ -31,7 +31,6 @@ subtitle: By The Community For The Community
         </tr>
       </thead>
       <tbody>
-        <!-- 
         <!-- Events List Only show if greater than now (where now is BUILD TIME)-->
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% for post in site.posts %}
@@ -60,7 +59,6 @@ subtitle: By The Community For The Community
         </tr>
         {% endif %}
         {%- endfor %}
-      -->
       </tbody>
 
     </table>
@@ -85,7 +83,7 @@ subtitle: By The Community For The Community
             </tr>
           </thead>
           <tbody>
-            <!-- 
+
 <!-- Past Events List Only show if less than now (where now is BUILD TIME)-->
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% for post in site.posts %}
@@ -115,7 +113,6 @@ subtitle: By The Community For The Community
             </tr>
           {% endif %}
         {% endfor %}
-          -->
       </tbody>
 
     </table>
