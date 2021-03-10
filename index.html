@@ -31,11 +31,11 @@ subtitle: By The Community For The Community
         </tr>
       </thead>
       <tbody>
-        <!-- Events List Only show if greater than now (where now is BUILD TIME)-->
-        {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-        {% for post in site.posts %}
-          {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
-          {% if date > now %}
+        <!-- Events List show future events-->
+          {% assign curDate = site.time | date: '%s' %}
+          {% for post in site.posts %}
+          {% assign postStartDate = post.date | date: '%s' %}
+          {% if postStartDate >= curDate %}
         <tr>
           <td>
             <div class="hero-box mt-3 align-self-center">
