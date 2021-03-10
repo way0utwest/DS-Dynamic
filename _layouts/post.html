@@ -51,3 +51,28 @@ layout: default
       </div>
   </div>
 </section>
+
+<section class="page-section" id="sponsors">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading text-uppercase">Sponsors</h2>
+              <div class="container">
+                {%- for sponsor in pagedata.sponsors -%}
+                <div class="row justify-content-center">
+                  <div class="hero-box mr-4 mt-4 ml-4 align-self-center">
+                      <a href="{{sponsor.link}}">
+                          <img src="{{sponsor.image}}" height="{{sponsor.height}}"/>
+                      </a>
+                  </div>
+              {%- endfor %}
+  
+                  </div>
+                  <div class="row justify-content-center">
+                      <div CLASS="mt-5">
+                          If you want to sponsor this event <a href="#contact">get in touch with the organizers</a>
+                      </div>
+                  </div>
+              </div>
+      </div>
+  </div>
+</section>
