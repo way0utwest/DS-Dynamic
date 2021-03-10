@@ -3,14 +3,9 @@ layout: default
 ---
 
 {% assign eventdata = page.data %}
-{% assign pagedata = site.data.events.eventdata %}
+{% assign pagedata = site.data.events[eventdata] %}
 
-page.data<br>
-{{page.data}}
-eventdata<br>
-{{eventdata}}
-pagedata<br>
-{{pagedata}}
+
 {{pagedata.name}}
 {{pagedata.data}}
 {{pagedata.description}}
