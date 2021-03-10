@@ -86,4 +86,42 @@ layout: default
             </div>
         </div>
       </section>
-   
+    
+        <!-- Speakers -->
+    
+        <section class="page-section" id="speakers">
+          <div class="container">
+              <div class="text-center">
+                  <h2 class="section-heading text-uppercase">Speakers</h2>
+                  <div class="alert alert-light" role="alert">
+                      <p>
+                        {% if pagedata.callforspeakers = false %}
+                          <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>   
+                        {% else %}
+                          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.speakerlisturl}}">Submit your session</a>
+                        {% endif %}                         
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </section>
+      
+          <!-- Contact -->
+      
+        <section class="page-section" id="contact">
+          <div class="container">
+              <div class="text-center">
+                  <h2 class="section-heading text-uppercase">Contact</h2>
+                  {%- for organiser in pagedata.organizers -%}
+                  <div class="alert alert-light" role="alert">
+                      <p>
+                          <b>Organizer:</b> {{organiser.name}}
+                          <a class="btn btn-dark btn-social mx-2" href="{{organiser.twitter}}"><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-dark btn-social mx-2" href="{{organiser.email}}"><i class="far fa-envelope"></i></a>
+                      </p>
+                  </div>
+                  {%- endfor %}
+              </div>
+          </div>
+        </section>
+      

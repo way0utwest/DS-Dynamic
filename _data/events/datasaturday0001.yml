@@ -44,6 +44,7 @@ sponsors:
     image: ../assets/img/events/0001/altitudo.png
     height: 90
 speakerlisturl: https://sessionize.com/api/v2/vpoxqhtw/view/SpeakerWall
+callforspeakers:  false
 organizers:
   - name: Marco Pozzan
     twitter: https://twitter.com/marcopozzan
