@@ -2,7 +2,7 @@ name: "Data Saturday #7 - Los Angeles"
 date: 2021-04-24 08:00:00 -0000
 virtual: true
 description: "<p>
-                        <img src=\"assets/0007/data.sql_.saturday.jpg\" width=\"225\" height=\"225\">
+                        <img src=\"/assets/img/events/0007/data.sql_.saturday.jpg\" width=\"225\" height=\"225\">
                     </p>
                     <p>
                         Data Saturday in Los Angeles is a free training event for professionals who use the Microsoft/AWS/GCP data platforms. These community events offer content across data management, cloud and hybrid architecture, analytics, business intelligence, AI, and more.
