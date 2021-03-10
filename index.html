@@ -35,7 +35,7 @@ subtitle: By The Community For The Community
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% for post in site.posts %}
           {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
-          {% if date > now %}
+          {% if date < now %}
         <tr>
           <td>
             <div class="hero-box mt-3 align-self-center">
