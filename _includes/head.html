@@ -6,6 +6,11 @@
   <title>Data Saturdays</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <!-- I am the default header -->
+  {% if layout.common-css %}
+  {% for css in layout.common-css %}
+    <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+{% endif %}
 <!-- Font Awesome icons (free version)-->
 <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 <!-- Google fonts-->
