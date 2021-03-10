@@ -105,7 +105,22 @@ layout: default
               </div>
           </div>
         </section>
-      
+
+        <!--Volunteers-->
+{% if pagedata.volunteerrequesturl %}
+        <section class="page-section" id="volunteers">
+          <div class="container">
+              <div class="text-center">
+                  <h2 class="section-heading text-uppercase">Volunteers</h2>
+                  <div class="alert alert-light" role="alert">
+                      <p>
+                          Volunteers are important to ensure the event runs smoothly. If you would like to help, <a href="{{ pagedata.volunteerrequesturl }}">submit your name as a volunteer.</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      {% endif %}
           <!-- Contact -->
       
         <section class="page-section" id="contact">
