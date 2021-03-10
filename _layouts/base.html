@@ -10,7 +10,7 @@ common-js:
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
 {% include head.html %}
 
-<body>
+<body onload="init()">
 
   {% include nav.html %}
 
