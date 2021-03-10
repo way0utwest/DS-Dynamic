@@ -95,7 +95,7 @@ layout: default
                   <h2 class="section-heading text-uppercase">Speakers</h2>
                   <div class="alert alert-light" role="alert">
                       <p>
-                        {% if pagedata.callforspeakers = false %}
+                        {% if pagedata.callforspeakers == false %}
                           <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>   
                         {% else %}
                           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.speakerlisturl}}">Submit your session</a>
