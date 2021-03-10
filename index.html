@@ -49,25 +49,26 @@ subtitle: By The Community For The Community
       </thead>
       <tbody>
         <!-- Events List -->
-        {%- for event in site.data.events -%}
+        {% assign posts = paginator.posts | default: site.posts %}
+        {% for post in posts %}
         <tr>
           <td>
             <div class="hero-box mt-3 align-self-center">
-              <a href="./events/datasaturday0003.html">
+              <a href="{{ post.url | absolute_url }}">
                 <img src="assets/img/logos/datasaturday_temp.png" height="65" />
               </a>
             </div>
           </td>
           <td>
             <div class="hero-box mt-3 align-self-center flex-nowrap text-uppercase">
-              <a href="./events/datasaturday0003.html">
-                <div class="nav-link">{{event.name}}</div>
+              <a href="{{ post.url | absolute_url }}">
+                <div class="nav-link">{{ post.title }}</div>
               </a>
             </div>
           </td>
           <td>
             <div class="hero-box mt-3 align-self-center flex-nowrap">
-              <div class="nav-link">{{event.date}}</div>
+              <div class="nav-link">{{ post.date }}</div>
             </div>
           </td>
         </tr>
