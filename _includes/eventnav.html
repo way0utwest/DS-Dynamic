@@ -11,9 +11,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
-                {%- for link in site.data.eventnav -%}
+                {%- for navitem in site.data.eventnav -%}
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+                    <a class="nav-link js-scroll-trigger" href="{{ navitem.link | relative_url }}">{{ navitem.name }}</a>
                   </li>
                 {%- endfor %}
             </ul>
