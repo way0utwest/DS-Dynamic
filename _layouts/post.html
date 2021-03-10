@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ page.language | default: site.language | default: 'en' }}">
-{% include head.html %}
+---
+layout: default
+---
 
-<body>
+{% include eventnav.html %}
 
-  {% include eventnav.html %}
+{{ content }}
 
-  {{ content }}
-
-  {% include footer.html %}
-
-</body>
-</html>
+{% include footer.html %}

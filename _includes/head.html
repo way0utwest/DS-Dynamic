@@ -6,6 +6,11 @@
   <title>Data Saturdays</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <!-- I am the default header -->
+  {% if layout.common-css %}
+  {% for css in layout.common-css %}
+    <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+{% endif %}
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
@@ -17,8 +22,6 @@
   <link href=https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css rel=stylesheet>
   
   
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="assets/css/styles.css" rel="stylesheet" />
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" sri="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
@@ -34,6 +37,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Third party plugin JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<!-- Core theme JS-->
-<script src="./assets/js/scripts.js"></script>
 </head>
