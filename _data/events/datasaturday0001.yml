@@ -26,25 +26,25 @@ scheduleurl: https://sessionize.com/api/v2/vpoxqhtw/view/GridSmart
 
 sponsors:
   - link: https://quantumdatis.com
-    image: ./assets/0001/quantumdatis_path.svg
+    image: ../assets/0001/quantumdatis_path.svg
     height: 80
   - link: https://quantumdatis.com
-    image: ./assets/0001/quantumdatis_path.svg
+    image: ../assets/0001/quantumdatis_path.svg
     height: 100
   - link: https://www.alphasys.it/
-    image: ./assets/0001/alphasys-stacked-blue-transparent-_720x720_round.png
+    image: ../assets/0001/alphasys-stacked-blue-transparent-_720x720_round.png
     height: 65
   - link: https://www.realcomm.it/
-    image: ./assets/0001/realcomm.png
+    image: ../assets/0001/realcomm.png
     height: 90
   - link: https://www.beantech.it/
-    image: ./assets/0001/beantech.png
+    image: ../assets/0001/beantech.png
     height: 70
   - link: https://www.fluentis.com/
-    image: ./assets/0001/logoFluentis 250x52px.png
+    image: ../assets/0001/logoFluentis 250x52px.png
     height:
   - link: https://www.altitudo.com/
-    image: ./assets/0001/altitudo.png
+    image: ../assets/0001/altitudo.png
     height: 90
 speakerlisturl: https://sessionize.com/api/v2/vpoxqhtw/view/SpeakerWall
 organizers:
