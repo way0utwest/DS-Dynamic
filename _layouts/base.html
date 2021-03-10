@@ -16,6 +16,11 @@ common-css:
   {{ content }}
 
   {% include footer.html %}
-
+  <script>
+    function init() {
+        $.fn.dataTable.moment( 'MMMM D YYYY' );
+        $('#eventlist').DataTable({"order": [[ 2, "asc" ]]});
+    };
+</script>
 </body>
 </html>
