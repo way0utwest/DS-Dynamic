@@ -22,7 +22,7 @@ join:
       url: https://global.gotomeeting.com/join/806088709
     - name: Room 6
       url: https://global.gotomeeting.com/join/245433509
-scehduleurl: https://sessionize.com/api/v2/vpoxqhtw/view/GridSmart
+scheduleurl: https://sessionize.com/api/v2/vpoxqhtw/view/GridSmart
 
 sponsors:
   - link: https://quantumdatis.com

@@ -13,7 +13,7 @@
             <ul class="navbar-nav text-uppercase ml-auto">
                 {%- for navitem in site.data.eventnav -%}
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="{{ navitem.link | relative_url }}">{{ navitem.name }}</a>
+                    <a class="nav-link js-scroll-trigger" href="{{ navitem.link | absolute_url }}">{{ navitem.name }}</a>
                   </li>
                 {%- endfor %}
             </ul>
