@@ -7,33 +7,33 @@
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <!-- I am the default header -->
 
-{% if layout.common-ext-css %}
-    {% for css in layout.common-ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
-  {% endif %}
+  {% if layout.common-ext-css %}
+      {% for css in layout.common-ext-css %}
+        {% include ext-css.html css=css %}
+      {% endfor %}
+    {% endif %} 
 
-  {% if layout.common-css %}
-    {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
-  {% endif %}
+    {% if layout.common-css %}
+      {% for css in layout.common-css %}
+        <link rel="stylesheet" href="{{ css | relative_url }}">
+      {% endfor %}
+    {% endif %} 
 
-  {% if site.site-css %}
-    {% for css in site.site-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
-  {% endif %}
+    {% if site.site-css %}
+      {% for css in site.site-css %}
+        <link rel="stylesheet" href="{{ css | relative_url }}">
+      {% endfor %}
+    {% endif %} 
 
-  {% if page.ext-css %}
-    {% for css in page.ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
-  {% endif %}
-  
-  {% if page.css %}
-    {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
-  {% endif %}
+    {% if page.ext-css %}
+      {% for css in page.ext-css %}
+        {% include ext-css.html css=css %}
+      {% endfor %}
+    {% endif %}
+    
+    {% if page.css %}
+      {% for css in page.css %}
+        <link rel="stylesheet" href="{{ css | relative_url }}">
+      {% endfor %}
+    {% endif %}
 </head>
