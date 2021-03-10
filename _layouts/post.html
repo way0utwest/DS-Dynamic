@@ -5,7 +5,33 @@ layout: default
 {% assign eventdata = page.data %}
 {% assign pagedata = site.data.events[eventdata] %}
 
+<!-- Masthead-->
+<header class="masthead">
+  <div class="container">
+      <div class="masthead-heading text-uppercase">{{pagedata.name}}</div>
+      <div class="masthead-subheading">{{pagedata.date}}</div>
+      <div class="alert alert-light" role="alert">
+        {{pagedata.description}}
+      </div>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+  </div>
+</header>
 
-{{pagedata.name}}
-{{pagedata.data}}
-{{pagedata.description}}
+  <!-- About-->
+  <section class="page-section" id="join">
+    <div class="container container-sm">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Rooms</h2>
+            <p>
+              {{pagedata.join.description}}
+            </p>
+            <div class="row justify-content-center">
+                <p>
+                  {%- for room in pagedata.join.rooms -%}
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mr-4" target="_blank" href="{{room.url">{{room.name}}</a>
+                  {%- endfor %}
+               </p>
+            </div>
+        </div>
+    </div>
+</section>
