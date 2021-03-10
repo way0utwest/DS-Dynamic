@@ -9,7 +9,7 @@ layout: default
 <header class="masthead" id="page-top">
   <div class="container">
       <div class="masthead-heading text-uppercase">{{pagedata.name}}</div>
-      <div class="masthead-subheading">{{pagedata.date}}</div>
+      <div class="masthead-subheading">{{ pagedata.date | date_to_long_string }}</div>
       <div class="alert alert-light" role="alert">
         {{pagedata.description}}
       </div>
