@@ -18,10 +18,14 @@ join:
 
 scheduleurl: https://sessionize.com/api/v2/xzfnfhd6/view/GridSmart
 
-sponsors: https://datadriventechnologies.org/2021/02/22/2021-data-sql-saturday-sponsorship-plan/
+sponsors: 
+ - link: https://www.voiceofthedba.com
+    image: https://voiceofthedba.files.wordpress.com/2010/09/p15137ta101084_23.jpg?w=640
+    height: 200
 
 speakerlisturl: https://sessionize.com/data-saturday-sofia/
-callforspeakers: true 
+callforspeakers: false
+volunteerrequesturl: https://voiceofthedba.com/about/
 organizers:
   - name: DenverSQL
     twitter: https://twitter.com/denversql
