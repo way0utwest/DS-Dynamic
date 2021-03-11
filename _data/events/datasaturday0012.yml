@@ -5,16 +5,24 @@ description:  "Data Saturday #12 Denver is a free one-day event for professional
 This community event offer content across data management, cloud and hybrid architecture, analytics, business intelligence, AI, and more.
 <br><br>
 We are planning event to be a hybrid event:
-
-
-Event location is : Online, platform TBD
-<br>
+<br><br>
+Event location is : Online, platform TBD. If the event is live, The address is:
+<br>Denver University<br>
+100 University Lane<br>
+Stedman Hall<br>
+Denver, CO 80237
+<br><br>
 We look forward to seeing you there.
 "
 registrationurl: https://data-saturday-sofia.eventbrite.com/
 join:
   description: Click on the room you want to join. You can change room at any time to attend the sessions that you prefer.
   rooms:
+rooms:
+    - name: Keynote Hall
+      url: https://redgate.zoom.us/j/5547753958?pwd=Z2ZxK244amU1b2NwMXREVG9hSnJaZz09
+    - name: PowerShell Special
+      url: https://teams.microsoft.com/sdfsdfsdfsdfdsfsdfsd
 
 scheduleurl: https://sessionize.com/api/v2/xzfnfhd6/view/GridSmart
 
@@ -22,10 +30,13 @@ sponsors:
  - link: https://www.voiceofthedba.com
    image: https://voiceofthedba.files.wordpress.com/2010/09/p15137ta101084_23.jpg?w=640
    height: 200
+ - link: https://www.microsoft.com
+   image: https://cdn.vox-cdn.com/thumbor/WMimbwNTGuUUuuDDh5VgkK2PPUs=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/59201615/DSCF1179.0.0.jpg
+   height: 200
 
 speakerlisturl: https://sessionize.com/data-saturday-sofia/
 callforspeakers: false
-volunteerrequesturl: https://voiceofthedba.com/about/
+volunteerrequesturl: https://datadriventechnologies.org/2021/02/22/2021-data-sql-saturday-sponsorship-plan/
 organizers:
   - name: DenverSQL
     twitter: https://twitter.com/denversql
