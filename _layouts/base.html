@@ -53,9 +53,10 @@ common-js:
     <script src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/datetime-moment.js"></script>
 
     <script>
-        function init() {
+            function init() {
             $.fn.dataTable.moment( 'D MMMM YYYY' );
             $('#eventlist').DataTable({"order": [[ 2, "asc" ]]});
+            $('#pasteventlist').DataTable({"order": [[ 2, "asc" ]]});
         };
     </script>
 </body>
