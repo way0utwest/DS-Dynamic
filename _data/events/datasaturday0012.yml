@@ -3,11 +3,12 @@ date: 2021-09-09 08:00:00 -0700
 virtual: true
 description:  "Data Saturday #12 Denver is a free one-day event for professionals who use the Microsoft data platform. 
 This community event offer content across data management, cloud and hybrid architecture, analytics, business intelligence, AI, and more.
-
+<br><br>
 We are planning event to be a hybrid event:
 
-Event location is : Online, platform TBD
 
+Event location is : Online, platform TBD
+<br>
 We look forward to seeing you there.
 "
 registrationurl: https://data-saturday-sofia.eventbrite.com/
@@ -15,13 +16,17 @@ join:
   description: Click on the room you want to join. You can change room at any time to attend the sessions that you prefer.
   rooms:
 
-scheduleurl:
+scheduleurl: https://sessionize.com/api/v2/xzfnfhd6/view/GridSmart
 
-sponsors:
+sponsors: 
+ - link: https://www.voiceofthedba.com
+    image: https://voiceofthedba.files.wordpress.com/2010/09/p15137ta101084_23.jpg?w=640
+    height: 200
 
 speakerlisturl: https://sessionize.com/data-saturday-sofia/
-callforspeakers: true 
+callforspeakers: false
+volunteerrequesturl: https://voiceofthedba.com/about/
 organizers:
   - name: DenverSQL
-    twitter: twitter.com/denversql
+    twitter: https://twitter.com/denversql
     email: mailto:events@denversql.org
